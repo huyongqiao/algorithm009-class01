@@ -1,6 +1,7 @@
 学习笔记
 
-合并两个有序链表:
+#### 合并两个有序链表
+```python
 class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         head = ListNode(0)
@@ -23,8 +24,10 @@ class Solution:
                 l2 = l2.next
             l3 = l3.next
         return head.next
+```
 
-两数之和：
+#### 两数之和
+```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         d = {}
@@ -34,3 +37,4 @@ class Solution:
             else:
                 # 字典key存储值，value存储值对应的索引
                 d[v] = i
+```
